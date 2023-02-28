@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=8, initial-scale=1.0">
+    <title>RESUME_WEBSITE</title>
+    <link rel="stylesheet" href="Resume.css">
+    <script src="https://kit.fontawesome.com/7bacf99012.js" crossorigin="anonymous"></script>
+</head>
+<!-- ---------------------------------------------- -->
+<body>
+    <div id="header">
+        <div class="container">
+            
+            <nav>
+                <p><i><b><span>S</span>owntharya🦋</b></i></p>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Projects">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi there,<br> I'm <span class="input"></span></h1>
+                <p><span>E</span>lectronics and <span>I</span>nstrumentation <span>E</span>ngineer</p>
+               
+                </div>
+                <br>
+                <button class="btn btn2"><a href="image/SOWNTHARYA V(135).pdf" download><b>Download Resume</b></a></button>
+        </div>
+    </div>
+<!-- -------------------------------------------------- -->
+    <div id="About">
+        <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/IMG_20230227_140304.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <br>
+                <p>Able to utilize my skills and abilities in the industries that
+                    offers professional growth while being resourceful, innovative
+                    and flexible.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('software-tools')">Software-tools</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C Programming</span></li>
+                            <li><span>C++ Programming</span></li>
+                            <li><span>HTML,CSS</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="software-tools">
+                        <ul>
+                            <li><span>Programmable Logic Controller</span><br></li>
+                            <li><span>Proteus</span><br></li>
+                            <li><span>MATLAB</span><br></li>
+                            <li><span>Tinkercad</span><br></li>
+                            
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+<!-- ------------------------------------------------------------------ -->
+    <div id="Education">
+        <div class="container">
+          <h1 class="sub-title">Education</h1>
+          <div class="Education-list">
+            <div>
+                <h2>BE-EIE</h2>
+                <p><b>Bannari Amman Institute of Technology </b>
+                    Graduation Year 2024<br>
+                    Attained a CGPA of 8.69 (upto 5th semester)</p>
+            </div>
+            <div>
+              <h2>HSC</h2>
+              <p><b>Sri Venkateshwara Vidhyalayaa Higher
+                Secondary School</b>, Gobichettipalayam<br>2020<br>
+                Attained a Percentage of 78 %</p>
+          </div>
+          <div>
+            <h2>SSLC</h2>
+            <p><b>Sri Venkateshwara Vidhyalayaa Matriculation School</b>, Gobichettipalayam<br>2018<br>
+              Attained a Percentage of 93 %</p>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+<!-- ------------------------------------------------- -->
+    <div id="Projects">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="IMG_20230227_123139.jpg">
+                    <div class="layer">
+                        <h3><b>Obstactle Avoidance Robot</b></h3>
+                        <p>The bot was fully automated and designed
+                            with advanced technologies.
+                            </p>
+                        </div>
+                        </div>
+                            <div class="work">
+                            <img src="image/IMG_20230227_140608.jpg">
+                            <div class="layer">
+                                <h3><b>Smart Waste Management System Based on IOT
+                                    using Arduino</b></h3>
+                                <p>The smart and organized system is designed for
+                                    selective clearing.This system provides an effective
+                                    solution to the waste management problem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sowntharya.ei20@bitsathy.ac.in<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sowntrigiri2003@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8903222238</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+--------------------------------------  -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed=new Typed(".input",{
+            strings:["Sowntharya"],
+            typespeed:100,
+            backSpeed:70,
+            loop:true
+        });
+    </script>
+</body>
+</html>
